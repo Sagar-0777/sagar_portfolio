@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        #animated-heading, #animated-subtext {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid gray; /* Cursor effect */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <header class="bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 text-white">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide text-black">MyPortfolio</h1>
+            <ul class="flex space-x-6 text-lg text-black">
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                <li><a href="#resume" class="hover:underline">Resume</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 id="animated-heading" class="text-5xl font-extrabold"></h1>
+            <p id="animated-subtext" class="mt-6 text-xl"></p>
+            <br><br><br>
+            <a href="#contact" class="mt-10 px-8 py-4 bg-yellow-500 text-gray-900 font-bold rounded-full shadow-lg hover:bg-yellow-600">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold text-blue-600">Skills</h2>
+            <p class="text-lg text-gray-700 mt-2">Technologies I work with:</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-10">
+                <div class="p-6 bg-white shadow-md rounded-lg hover:scale-105 transform transition">
+                    <img src="html-icon.png" alt="HTML" class="h-14 mx-auto">
+                    <p class="mt-4 font-semibold text-gray-800">HTML</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg hover:scale-105 transform transition">
+                    <img src="css-icon.png" alt="CSS" class="h-14 mx-auto">
+                    <p class="mt-4 font-semibold text-gray-800">CSS</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg hover:scale-105 transform transition">
+                    <img src="js-icon.png" alt="JavaScript" class="h-14 mx-auto">
+                    <p class="mt-4 font-semibold text-gray-800">JavaScript</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg hover:scale-105 transform transition">
+                    <img src="react-icon.png" alt="React" class="h-14 mx-auto">
+                    <p class="mt-4 font-semibold text-gray-800">React</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg hover:scale-105 transform transition">
+                    <img src="java-icon.png" alt="React" class="h-14 mx-auto">
+                    <p class="mt-4 font-semibold text-gray-800">Java</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg hover:scale-105 transform transition">
+                    <img src="sql-icon.png" alt="React" class="h-14 mx-auto">
+                    <p class="mt-4 font-semibold text-gray-800">MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold text-purple-600">Projects</h2>
+            <p class="text-lg text-gray-700 mt-2">A glimpse of my work:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div class="bg-white shadow-md rounded-lg hover:shadow-lg transform hover:scale-106 transition">
+                    <img src="h.png" alt="Project 1" class="w-full h-150 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-800">Project 1<br>Hospital Management System</h3>
+                        <p class="text-gray-600 mt-2">This project is a comprehensive Hospital Management System designed to streamline 
+                            administrative and patient management processes. It includes features such as patient admission, 
+                            discharge, record updates, and user authentication (login/logout). 
+                            The system also supports role-based access for doctors, nurses, and 
+                            administrative staff, ensuring efficient management of appointments, medical records, 
+                            billing, and inventory. Built with a user-friendly interface and secure
+                             backend, this system enhances operational efficiency and provides a seamless 
+                             experience for both staff and patients.</p>
+                        <a href="https://github.com/Sagar-0777/hospital_management_system_project" class="mt-4 text-blue-500 font-semibold hover:underline block">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold text-teal-600">My Resume</h2>
+            <p class="mt-4 text-lg text-gray-700">Download my resume to learn more about my professional background.</p>
+            <a href="resume.pdf" download 
+            class="mt-10 inline-block px-8 py-4 bg-yellow-500 text-black font-bold rounded shadow-lg hover:bg-yellow-600">
+             Download Resume
+         </a>
+         
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-purple-500 to-blue-500 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold">Contact Me</h2>
+            <form class="mt-10 max-w-lg mx-auto">
+                <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 border rounded text-gray-900">
+                <input type="email" placeholder="Your Email" class="w-full p-4 mb-4 border rounded text-gray-900">
+                <textarea placeholder="Your Message" class="w-full p-4 mb-4 border rounded text-gray-900"></textarea>
+                <button type="submit" class="px-8 py-4 bg-yellow-500 text-gray-900 font-bold rounded shadow-lg hover:bg-yellow-600">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-6 bg-gray-800 text-white text-center">
+        <p>&copy; 2024 Sagar. All rights reserved.</p>
+    </footer>
+
+    <!-- Typing Effect Script -->
+    <script>
+        const lines = [
+            "Hi, I'm Sagar",
+            "A passionate Frontend Developer building stunning user experiences."
+        ];
+
+        const heading = document.getElementById("animated-heading");
+        const subtext = document.getElementById("animated-subtext");
+
+        let charIndex = 0;
+        let lineIndex = 0;
+        let isErasing = false;
+
+        function typeEffect() {
+            const currentLine = lines[lineIndex];
+            const targetElement = lineIndex === 0 ? heading : subtext;
+
+            if (!isErasing) {
+                targetElement.textContent = currentLine.slice(0, charIndex++);
+                if (charIndex > currentLine.length) {
+                    isErasing = true;
+                    setTimeout(typeEffect, 1500);
+                    return;
+                }
+            } else {
+                targetElement.textContent = currentLine.slice(0, charIndex--);
+                if (charIndex < 0) {
+                    isErasing = false;
+                    lineIndex = (lineIndex + 1) % lines.length;
+                }
+            }
+
+            setTimeout(typeEffect, isErasing ? 50 : 100);
+        }
+
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+</body>
+</html>
